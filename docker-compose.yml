@@ -60,3 +60,4 @@ services:
       SERVICES: sqs, s3
       HOSTNAME: localstack
       HOSTNAME_EXTERNAL: localstack
+

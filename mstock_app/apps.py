@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class SideProjectConfig(AppConfig):
+class MstockAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'side_project'
+    name = 'mstock_app'
