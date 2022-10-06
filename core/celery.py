@@ -28,15 +28,9 @@ app.autodiscover_tasks()
 
 app.conf.timezone = "UTC"
 
-app.conf.beat_schedule = {
-    "health_check": {
-        "task": "worker_health_check",
-        "schedule": crontab(minute="*/1"),
-    },
-}
-
-CELERY_BROKER_URL = "redis://redis:5672"
-CELERY_RESULT_BACKEND = "redis://redis:5672"
-
-# CELERY_BROKER_URL = "redis://redis:6379"
-# CELERY_RESULT_BACKEND = "redis://redis:6379"
+# app.conf.beat_schedule = {
+#     "health_check": {
+#         "task": "worker_health_check",
+#         "schedule": crontab(minute="*/1"),
+#     },
+# }
